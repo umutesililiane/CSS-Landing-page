@@ -1,19 +1,38 @@
-p{
+
+
+all the following css are working but commnted due to trying to understand both selectors
+
+
+
+/* p{
     color: #0e0f0e;
 }
 .error{
     color: red;
-}
+} */
 
 /* this will choose only all paragraphs of class error */
 /* p.success{
     color: aqua;
 } */
 
-p.success{
+/* p.success{
     color: blue;
 }
 
 p.success.feedback{
     border: 1px dashed rgb(241, 141, 9);
+}
+
+#content{
+    background-color: #e1ebe1;
+    padding: 20px;
+} */
+
+/* div p{
+    color: #2eb2f0;
+} */
+
+div .error{
+    color: brown;
 }
