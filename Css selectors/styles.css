@@ -1,38 +1,58 @@
-
-
 all the following css are working but commnted due to trying to understand both selectors
-
-
-
+/* 
 /* p{
     color: #0e0f0e;
 }
 .error{
     color: red;
 } */
-
+*/
 /* this will choose only all paragraphs of class error */
 /* p.success{
     color: aqua;
 } */
 
-/* p.success{
-    color: blue;
+p.success {
+    color: rgb(0, 255, 42);
 }
 
-p.success.feedback{
+p.success.feedback {
     border: 1px dashed rgb(241, 141, 9);
 }
 
-#content{
+#content {
     background-color: #e1ebe1;
     padding: 20px;
-} */
-
-/* div p{
-    color: #2eb2f0;
-} */
-
-div .error{
-    color: brown;
 }
+
+*/ div p {
+    color: #2eb2f0;
+}
+
+/* div .error{
+    color: red;
+} */
+a[href="https://github.com/umutesililiane?tab=repositories"] {
+    background-color: rgb(128, 0, 28);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*this says that everything wich have umutesililiane included in the url will have the following properties */
+/* a[href*="umutesililiane"]{
+    background-color: rgb(128, 0, 28);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+} */
+/* $ means everything that ends with umutesililiane 
+a[href$="umutesililiane"]{
+    background-color: rgb(128, 0, 28);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+} */
