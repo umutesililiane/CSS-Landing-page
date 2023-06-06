@@ -1,4 +1,4 @@
-all the following css are working but commnted due to trying to understand both selectors
+/* all the following css are working but commnted due to trying to understand both selectors */
 /* 
 /* p{
     color: #0e0f0e;
@@ -6,13 +6,13 @@ all the following css are working but commnted due to trying to understand both 
 .error{
     color: red;
 } */
-*/
+
 /* this will choose only all paragraphs of class error */
 /* p.success{
     color: aqua;
 } */
 
-p.success {
+/* p.success {
     color: rgb(0, 255, 42);
 }
 
@@ -25,20 +25,20 @@ p.success.feedback {
     padding: 20px;
 }
 
-*/ div p {
+*div p {
     color: #2eb2f0;
-}
+} */
 
 /* div .error{
     color: red;
 } */
-a[href="https://github.com/umutesililiane?tab=repositories"] {
+/* a[href="https://github.com/umutesililiane?tab=repositories"] {
     background-color: rgb(128, 0, 28);
     color: white;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-}
+} */
 
 /*this says that everything wich have umutesililiane included in the url will have the following properties */
 /* a[href*="umutesililiane"]{
@@ -48,11 +48,33 @@ a[href="https://github.com/umutesililiane?tab=repositories"] {
     font-weight: bold;
     text-transform: uppercase;
 } */
-/* $ means everything that ends with umutesililiane 
-a[href$="umutesililiane"]{
+
+ /* dollar sign  means everything that ends with umutesililiane  */
+/* a[href$="umutesililiane"]{
     background-color: rgb(128, 0, 28);
     color: white;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-} */
+}  */
+div{
+    color: lightcoral;
+    border: 1px solid gray;
+    margin: 40px;
+    font-weight: bold;
+}
+p{
+    border: inherit;
+    margin: inherit;
+    color: green ;
+}
+/* the color of the paragraphs will changes because the codes runs from top to bottom */
+p{
+    color: orange;
+}
+/* this one is more specific selector than the above so it will change the color of every paragraph in division */
+div p{
+    border: inherit;
+    margin: inherit;
+    color: green ;
+}
